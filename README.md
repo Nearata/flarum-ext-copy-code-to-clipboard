@@ -27,3 +27,7 @@ Distributed under the MIT license. See `LICENSE` for more information.
 2. Commit your changes
 3. Push to the branch
 4. Create a new Pull Request
+
+## Credits
+
+[copy-text-to-clipboard](https://github.com/sindresorhus/copy-text-to-clipboard) by [Sindre Sorhus](https://github.com/sindresorhus)
