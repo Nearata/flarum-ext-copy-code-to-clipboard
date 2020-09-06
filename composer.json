@@ -1,0 +1,40 @@
+{
+    "name": "nearata/flarum-ext-copy-code-to-clipboard",
+    "description": "Allows the user to easly copy the text inside the code tag.",
+    "keywords": [
+        "flarum",
+        "copy",
+        "code",
+        "clipboard"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^0.1.0-beta.13"
+    },
+    "authors": [
+        {
+            "name": "William Di Cicco",
+            "email": "williamdicicco@protonmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nearata\\CopyCodeToClipboard\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Copy Code To Clipboard",
+            "icon": {
+                "name": "far fa-copy",
+                "backgroundColor": "#2e86f2",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": ""
+        }
+    }
+}
