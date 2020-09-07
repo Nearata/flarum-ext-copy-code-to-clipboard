@@ -9,7 +9,7 @@ app.initializers.add('nearata/flarum-ext-copy-code-to-clipboard', () => {
             return;
         }
 
-        const elements = document.getElementsByTagName('pre');
+        const elements = this.element.getElementsByTagName('pre');
         for (const el of elements) {
             const copyElement = document.createElement('div');
             copyElement.textContent = app.translator.trans('nearata-copy-code-to-clipboard.forum.copy');
@@ -18,7 +18,7 @@ app.initializers.add('nearata/flarum-ext-copy-code-to-clipboard', () => {
             el.appendChild(copyElement);
         }
 
-        const copyCodeElements = document.getElementsByClassName('copy-code');
+        const copyCodeElements = this.element.getElementsByClassName('copy-code');
         for (const el of copyCodeElements) {
             el.addEventListener('click', () => {
                 const childNodes = el.parentElement.childNodes;
