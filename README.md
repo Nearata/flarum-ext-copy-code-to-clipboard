@@ -17,6 +17,13 @@ composer update nearata/flarum-ext-copy-code-to-clipboard
 php flarum cache:clear
 ```
 
+## Remove
+
+```sh
+composer remove nearata/flarum-ext-copy-code-to-clipboard
+php flarum cache:clear
+```
+
 ## License
 
 Distributed under the MIT license. See `LICENSE` for more information.
