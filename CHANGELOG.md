@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.1.0...master)
 
+## [1.2.0] - 2021-02-20
+
+[Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.1.0...v1.2.0)
+
+- Updated style to be as simple as possible
+
 ## [1.1.0] - 2020-10-23
 
 [Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.0.1...v1.1.0)
