@@ -1,6 +1,6 @@
 # Copy Code to Clipboard
 
-> A [Flarum](https://flarum.org) extension that allows the user to easly copy the text inside the code tag.
+> A [Flarum](https://flarum.org) extension that allows the user to easly copy the text inside a code tag.
 
 ![Imgur](https://i.imgur.com/ngRTa7P.png)
 
