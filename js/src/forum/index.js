@@ -3,34 +3,31 @@ import { extend } from 'flarum/extend';
 import CommentPost from 'flarum/components/CommentPost';
 import copyTextToClipboard from 'copy-text-to-clipboard';
 
-app.initializers.add('nearata/flarum-ext-copy-code-to-clipboard', () => {
+app.initializers.add('nearata-copy-code-to-clipboard', () => {
     extend(CommentPost.prototype, 'oncreate', function () {
-        const elements = this.element.getElementsByTagName('pre');
-        for (const el of elements) {
-            const copyElement = document.createElement('span');
-            copyElement.textContent = app.translator.trans('nearata-copy-code-to-clipboard.forum.copy');
-            copyElement.classList.add('nearata-copy-code');
-            copyElement.style.color = app.forum.data.attributes.themePrimaryColor;
+        for (const el of this.element.querySelectorAll('pre')) {
+            const copyButton = document.createElement('button');
+            copyButton.classList.add('nearata-copy-code');
+            copyButton.setAttribute('title', app.translator.trans('nearata-copy-code-to-clipboard.forum.copy'));
+            copyButton.style.color = app.forum.data.attributes.themePrimaryColor;
 
-            el.after(copyElement);
+            const copyIcon = document.createElement('i');
+            copyIcon.classList.add('fas', 'fa-copy');
+
+            copyButton.append(copyIcon)
+            el.prepend(copyButton);
         }
 
-        const copyCodeElements = this.element.getElementsByClassName('nearata-copy-code');
-        for (const el of copyCodeElements) {
-            el.addEventListener('click', () => {
-                const childNodes = el.previousSibling.childNodes;
+        for (const el of this.element.querySelectorAll('.nearata-copy-code')) {
+            el.addEventListener('click', function (e) {
+                copyTextToClipboard(e.target.parentNode.nextSibling.textContent);
 
-                for (const n of childNodes) {
-                    const nodeName = n.nodeName.toLowerCase();
+                e.target.classList.replace('fa-copy', 'fa-check');
 
-                    if (nodeName === 'code') {
-                        copyTextToClipboard(n.textContent);
-                    }
-                }
-
-                el.textContent = app.translator.trans('nearata-copy-code-to-clipboard.forum.copied');
-
-                setTimeout(() => el.textContent = app.translator.trans('nearata-copy-code-to-clipboard.forum.copy'), 2000);
+                setTimeout(function () {
+                    e.target.classList.replace('fa-check', 'fa-copy');
+                    clearTimeout(0);
+                }, 1000);
             }, false)
         }
     });

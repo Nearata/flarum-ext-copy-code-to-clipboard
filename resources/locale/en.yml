@@ -1,4 +1,3 @@
 nearata-copy-code-to-clipboard:
   forum:
-    copy: Click to copy
-    copied: Copied to clipboard
+    copy: Copy to clipboard

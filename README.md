@@ -2,15 +2,15 @@
 
 > A [Flarum](https://flarum.org) extension that allows the user to easly copy the text inside a code tag.
 
-![Imgur](https://i.imgur.com/ngRTa7P.png)
+![Imgur](https://i.imgur.com/orNjSWH.png)
 
-## Installation
+## Install
 
 ```sh
 composer require nearata/flarum-ext-copy-code-to-clipboard
 ```
 
-## Updating
+## Update
 
 ```sh
 composer update nearata/flarum-ext-copy-code-to-clipboard
