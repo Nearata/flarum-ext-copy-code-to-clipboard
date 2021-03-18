@@ -1,9 +1,9 @@
-import app from 'flarum/app';
-import { extend } from 'flarum/extend';
-import CommentPost from 'flarum/components/CommentPost';
+import { extend } from 'flarum/common/extend';
+import CommentPost from 'flarum/forum/components/CommentPost';
+
 import copyTextToClipboard from 'copy-text-to-clipboard';
 
-app.initializers.add('nearata-copy-code-to-clipboard', () => {
+app.initializers.add('nearata-copy-code-to-clipboard', app => {
     extend(CommentPost.prototype, 'oncreate', function () {
         for (const el of this.element.querySelectorAll('pre')) {
             const copyButton = document.createElement('button');

@@ -15,7 +15,7 @@
         "forum": "https://discuss.flarum.org/d/24852"
     },
     "require": {
-        "flarum/core": ">=0.1.0-beta.15 <0.1.0-beta.16"
+        "flarum/core": ">=0.1.0-beta.16 <=0.1.0"
     },
     "authors": [
         {
@@ -32,6 +32,7 @@
     "extra": {
         "flarum-extension": {
             "title": "Copy Code To Clipboard",
+            "category": "feature",
             "icon": {
                 "name": "far fa-copy",
                 "backgroundColor": "#2e86f2",
