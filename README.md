@@ -26,7 +26,7 @@ php flarum cache:clear
 
 ## License
 
-Distributed under the MIT license. See `LICENSE` for more information.
+Distributed under the MIT license. See [LICENSE](LICENSE) for more information.
 
 ## Contributing
 
@@ -37,4 +37,4 @@ Distributed under the MIT license. See `LICENSE` for more information.
 
 ## Credits
 
-[copy-text-to-clipboard](https://github.com/sindresorhus/copy-text-to-clipboard) by [Sindre Sorhus](https://github.com/sindresorhus)
+- [sindresorhus/copy-text-to-clipboard](https://github.com/sindresorhus/copy-text-to-clipboard)
