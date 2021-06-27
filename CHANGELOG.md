@@ -5,37 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
-[Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.3.0...main)
-
 ## [1.3.0] - 2021-03-18
-
-[Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.2.0...v1.3.0)
 
 - Updated to beta 16
 
 ## [1.2.0] - 2021-02-20
 
-[Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.1.0...v1.2.0)
-
-- Updated style to be as simple as possible
+- (Improved) Updated style to be as simple as possible.
 
 ## [1.1.0] - 2020-10-23
-
-[Changes](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v1.0.1...v1.1.0)
 
 ### Update
 
 - Updated to beta 14
-- The button has been moved outside the `<pre>` tag.
-- From now the button will use the forum primary color.
+- (Improved) The button has been moved outside the `<pre>` tag.
+- (Improved) The button will use the forum primary color.
 
 ## [1.0.1] - 2020-09-07
 
-### Fix
-
-- A bug where the code adds a button to each code block for `x` posts loaded. [Reference](https://discuss.flarum.org/d/24852-copy-code-to-clipboard/3)
+- (Fix) A bug where the code adds a button to each code block for `x` posts loaded. [Reference](https://discuss.flarum.org/d/24852-copy-code-to-clipboard/3)
 
 ## [1.0.0] - 2020-09-06
 
