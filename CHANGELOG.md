@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - bump flarum to 1.8
+- use Flarum built-in components
 
 ## [2.1.0] - 2022-08-27
 
