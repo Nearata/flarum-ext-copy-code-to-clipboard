@@ -6,7 +6,7 @@
 
 > Allows the user to easly copy the text inside a code block.
 
-![Imgur](https://i.imgur.com/GmuzExa.png)
+![](screenshot.png)
 
 ## Install
 
