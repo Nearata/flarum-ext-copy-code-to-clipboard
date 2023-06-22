@@ -18,6 +18,7 @@ composer require nearata/flarum-ext-copy-code-to-clipboard:"*"
 
 ```sh
 composer update nearata/flarum-ext-copy-code-to-clipboard:"*"
+php flarum cache:clear
 ```
 
 ## Remove
