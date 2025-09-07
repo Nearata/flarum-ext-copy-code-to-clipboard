@@ -4,26 +4,16 @@
 [![packagist](https://img.shields.io/packagist/v/nearata/flarum-ext-copy-code-to-clipboard?style=flat)](https://packagist.org/packages/nearata/flarum-ext-copy-code-to-clipboard)
 [![changelog](https://img.shields.io/github/release-date/nearata/flarum-ext-copy-code-to-clipboard?label=last%20release%20date)](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/blob/main/CHANGELOG.md)
 
-> Allows the user to easly copy the text inside a code block.
+> Adds a copy button to html code tags, allowing users to easily copy the code content.
 
 ![](screenshot.png)
+
+## Note
+
+This extension works only in secure contexts (https).
 
 ## Install
 
 ```sh
-composer require nearata/flarum-ext-copy-code-to-clipboard:"*"
-```
-
-## Update
-
-```sh
-composer update nearata/flarum-ext-copy-code-to-clipboard:"*"
-php flarum cache:clear
-```
-
-## Remove
-
-```sh
-composer remove nearata/flarum-ext-copy-code-to-clipboard
-php flarum cache:clear
+composer require nearata/flarum-ext-copy-code-to-clipboard
 ```

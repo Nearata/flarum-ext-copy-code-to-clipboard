@@ -5,14 +5,16 @@ import CommentPost from "flarum/forum/components/CommentPost";
 
 app.initializers.add("nearata-copy-code-to-clipboard", () => {
   extend(CommentPost.prototype, "oncreate", function () {
-    for (const el of this.element.querySelectorAll("pre")) {
-      const container = document.createElement("div");
+    if (!window.isSecureContext) {
+      return
+    }
 
+    this.element.querySelectorAll("pre").forEach(function (el) {
+      const container = document.createElement("div");
       container.classList.add("NearataCopyCodeToClipboard");
 
       el.append(container);
-
       m.mount(container, CopyButton);
-    }
+    })
   });
 });

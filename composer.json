@@ -1,15 +1,13 @@
 {
     "name": "nearata/flarum-ext-copy-code-to-clipboard",
-    "description": "Allows the user to easly copy the text inside a code tag.",
+    "description": "Adds a copy button to html code tags, allowing users to easily copy the code content.",
     "keywords": [
         "flarum"
     ],
     "type": "flarum-extension",
     "license": "Unlicense",
     "support": {
-        "issues": "https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/issues",
-        "source": "https://github.com/Nearata/flarum-ext-copy-code-to-clipboard",
-        "forum": "https://discuss.flarum.org/d/24852"
+        "source": "https://github.com/Nearata/flarum-ext-copy-code-to-clipboard"
     },
     "require": {
         "flarum/core": "^1.8"
@@ -17,7 +15,6 @@
     "authors": [
         {
             "name": "Nearata",
-            "email": "nearata@protonmail.com",
             "role": "Developer"
         }
     ],

@@ -4,13 +4,7 @@ import app from "flarum/forum/app";
 import type Mithril from "mithril";
 
 export default class CopyButton extends Component {
-  clicked!: boolean;
-
-  oninit(vnode: Mithril.Vnode<this>): void {
-    super.oninit(vnode);
-
-    this.clicked = false;
-  }
+  clicked = false
 
   view(_: Mithril.Vnode<this>) {
     return (
@@ -21,6 +15,7 @@ export default class CopyButton extends Component {
         aria-label={app.translator.trans(
           "nearata-copy-code-to-clipboard.forum.copy"
         )}
+        disabled={this.clicked}
       />
     );
   }
@@ -30,7 +25,7 @@ export default class CopyButton extends Component {
 
     const code = this.element.closest("pre")?.querySelector("code");
 
-    navigator.clipboard.writeText(code?.textContent!);
+    navigator.clipboard?.writeText(code?.textContent!);
 
     setTimeout(() => {
       this.clicked = false;
