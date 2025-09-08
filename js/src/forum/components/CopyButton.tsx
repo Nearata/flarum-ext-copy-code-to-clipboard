@@ -4,32 +4,32 @@ import app from "flarum/forum/app";
 import type Mithril from "mithril";
 
 export default class CopyButton extends Component {
-  clicked = false
+	clicked = false;
 
-  view(_: Mithril.Vnode<this>) {
-    return (
-      <Button
-        className="Button Button--icon"
-        icon={this.clicked ? "fas fa-check" : "far fa-clone"}
-        onclick={this.onClick.bind(this)}
-        aria-label={app.translator.trans(
-          "nearata-copy-code-to-clipboard.forum.copy"
-        )}
-        disabled={this.clicked}
-      />
-    );
-  }
+	view(_: Mithril.Vnode<this>) {
+		return (
+			<Button
+				className="Button Button--icon"
+				icon={this.clicked ? "fas fa-check" : "far fa-clone"}
+				onclick={this.onClick.bind(this)}
+				aria-label={app.translator.trans(
+					"nearata-copy-code-to-clipboard.forum.copy",
+				)}
+				disabled={this.clicked}
+			/>
+		);
+	}
 
-  onClick(_: PointerEvent) {
-    this.clicked = true;
+	onClick(_: PointerEvent) {
+		this.clicked = true;
 
-    const code = this.element.closest("pre")?.querySelector("code");
+		const code = this.element.closest("pre")?.querySelector("code");
 
-    navigator.clipboard?.writeText(code?.textContent!);
+		navigator.clipboard?.writeText(code?.textContent || "");
 
-    setTimeout(() => {
-      this.clicked = false;
-      m.redraw();
-    }, 1000);
-  }
+		setTimeout(() => {
+			this.clicked = false;
+			m.redraw();
+		}, 1000);
+	}
 }
