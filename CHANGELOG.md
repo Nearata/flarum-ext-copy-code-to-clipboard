@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [2.2.1](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/compare/v2.2.0...v2.2.1) (2025-09-08)
+
+
+### Bug Fixes
+
+* extension only works in secure contexts (https) ([8bc1ea3](https://github.com/Nearata/flarum-ext-copy-code-to-clipboard/commit/8bc1ea3852b724246166e269fa3f1361a8798ac1))
+
 ## [2.2.0] - 2023-06-22
 
 - bump flarum to 1.8
